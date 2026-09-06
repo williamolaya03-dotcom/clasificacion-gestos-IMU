@@ -1,0 +1,5 @@
+modelo,balanced_accuracy_media,desv_estandar
+SVM-RBF (todas las características),0.975,0.022360679774997918
+Random Forest,0.9700000000000001,0.039999999999999994
+SVM-RBF sobre PCA de 20 componentes,0.97,0.018708286933869726
+SVM-RBF sobre PCA de 2 componentes,0.8300000000000001,0.03674234614174766

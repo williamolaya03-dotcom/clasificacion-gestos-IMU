@@ -1,0 +1,47 @@
+{
+  "modo": "ventana",
+  "conjunto": "completo",
+  "bins_entropia": 16,
+  "archivos_encontrados": 200,
+  "archivos_procesados": 200,
+  "archivos_descartados": 0,
+  "segmentos": 600,
+  "n_caracteristicas": 184,
+  "nan_en_salida": 0,
+  "fs_hz_mediana": 31.25,
+  "fs_hz_min": 30.303,
+  "fs_hz_max": 31.25,
+  "segmentos_por_clase": {
+    "abajo": 120,
+    "arriba": 120,
+    "circulo": 120,
+    "derecha": 120,
+    "izquierda": 120
+  },
+  "grabaciones_corregidas": [
+    {
+      "archivo": "data/raw/derecha/participante_01_sesion_01_rep_001.csv",
+      "muestras_eliminadas": 2,
+      "hueco_max_ms": 130623.0
+    },
+    {
+      "archivo": "data/raw/izquierda/participante_01_sesion_01_rep_001.csv",
+      "muestras_eliminadas": 1,
+      "hueco_max_ms": 2695.0
+    }
+  ],
+  "grabaciones_con_saturacion": [
+    {
+      "archivo": "data/raw/circulo/participante_01_sesion_01_rep_025.csv",
+      "muestras_saturadas": 1
+    }
+  ],
+  "descartados": [],
+  "caracteristicas_colineales": {
+    "descripcion": "energy = mean^2 + varianza_poblacional  y  rms = sqrt(energy).  Se conservan por requisito del enunciado, pero son redundantes.",
+    "sufijos": [
+      "energy",
+      "rms"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+clasificador,balanced_accuracy,desv
+"Gaussiano cuadrático, 3D (propio)",0.8299999999999998,0.02505549396395481
+"Gaussiano lineal, 3D (propio)",0.8550000000000001,0.03749073959733999
+"Gaussiano cuadrático, 2D (propio)",0.7416666666666667,0.015811388300841885
+"SVM-RBF, 3D (referencia)",0.8699999999999999,0.01715938356831164

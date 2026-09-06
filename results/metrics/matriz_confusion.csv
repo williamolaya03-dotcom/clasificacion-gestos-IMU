@@ -1,0 +1,6 @@
+,abajo,arriba,circulo,derecha,izquierda
+abajo,30,0,0,0,0
+arriba,0,38,0,0,4
+circulo,0,1,32,0,0
+derecha,0,0,0,30,12
+izquierda,0,0,0,9,24

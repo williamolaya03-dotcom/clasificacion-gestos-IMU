@@ -1,0 +1,30 @@
+{
+  "integrantes": [
+    "William David Olaya",
+    "Nelson Leonardo Hernandez"
+  ],
+  "placa_reportada": "Arduino Nano BLE Sense",
+  "colocacion": "en la mano",
+  "grabaciones": 200,
+  "ventanas": 600,
+  "n_caracteristicas": 48,
+  "fs_hz_mediana": 31.25,
+  "n_entrenamiento": 420,
+  "n_prueba": 180,
+  "aciertos_prueba": 154,
+  "proyeccion": "LDA",
+  "dim": 3,
+  "covarianza": "comun",
+  "cv_interna_balanced_accuracy": 0.8422222222222222,
+  "accuracy_prueba": 0.8555555555555555,
+  "balanced_accuracy_prueba": 0.8632034632034632,
+  "versiones": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3"
+  }
+}

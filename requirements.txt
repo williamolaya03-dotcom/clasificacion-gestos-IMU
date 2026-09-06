@@ -1,0 +1,15 @@
+# Dependencias del proyecto de clasificacion de gestos con IMU.
+#
+# Se usan cotas MINIMAS en lugar de versiones exactas: los pines anteriores
+# (numpy==1.24.3, pandas==2.0.3, scikit-learn==1.3.0) chocan con las
+# versiones que Google Colab trae preinstaladas y obligaban a reinstalar
+# medio entorno en cada ejecucion.
+
+pyserial>=3.5          # solo necesario para capturar desde el Arduino
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3      # StratifiedGroupKFold requiere >= 0.24
+matplotlib>=3.7
+seaborn>=0.12
+joblib>=1.3
