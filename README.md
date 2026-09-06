@@ -12,10 +12,7 @@ y el alcance de la información disponible están en [PROTOCOLO_CAPTURA.md](PROT
 
 ## Dataset
 | Dato | Valor verificado |
-|---|---|
-| Clases | 5 |
-| Grabaciones | 200: 40 por clase |
-| Identificadores de captura | participante_01, sesion_01 |
+
 | Duración útil por grabación | aproximadamente 3 s |
 | Frecuencia estimada mediana | 31,25 Hz |
 | Ventanas | 600 de aproximadamente 1,5 s |
@@ -68,24 +65,7 @@ Para generar de nuevo el conjunto extendido con su propio reporte:
 python scripts/extraer_caracteristicas.py --modo ventana --ventana-s 1.5 --solape 0.5 --conjunto completo --salida data/processed/caracteristicas_extendido.csv --reporte data/processed/reporte_extraccion_extendido.json
 ```
 
-Para capturar más datos, cargar `arduino/captura_imu/captura_imu.ino` con la
-librería que corresponda a la revisión física de la placa. El archivo recibido
-tiene activa Arduino_BMI270_BMM150 (Rev2); la versión original utiliza
-Arduino_LSM9DS1. La revisión de la placa utilizada no ha sido confirmada por el
-grupo. Las capturas seriales se hacen en el PC conectado por USB, mediante
-`python scripts/capturar_serial.py`, seleccionando el puerto e identificadores.
 
-Los datos históricos tienen una tasa estimada de 31,25 Hz. El objetivo de 50 Hz
-del firmware actualizado no cambia la frecuencia de los archivos existentes.
-
-## Interpretación y límites
-La energía implementada es la media del cuadrado, no la suma sin normalizar.
-La entropía describe el histograma de amplitudes. Las ventanas solapadas no son
-movimientos independientes. Los nombres de los autores no equivalen a dos
-participantes registrados: los identificadores existentes se conservan.
-Este dataset ya fue explorado en la versión anterior; los resultados son
-retrospectivos. Una nueva sesión permitiría comprobar el rendimiento de forma
-prospectiva, y más participantes permitirían estudiar la generalización.
 
 Referencias: [evitar fuga de información](https://scikit-learn.org/stable/common_pitfalls.html),
 [validación cruzada](https://scikit-learn.org/stable/modules/cross_validation.html),
